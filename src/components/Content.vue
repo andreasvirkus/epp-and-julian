@@ -1,5 +1,5 @@
 <template>
-  <div class="content-container">
+  <div :class="['content-container', { visible }]">
     <section class="content">
       <h1>Some introductory content</h1>
 
@@ -26,19 +26,22 @@
   import Schedule from './Schedule'
 
   export default {
-    name: 'content',
+    name: 'site-content',
     components: {
       OurStory,
       Accommodation,
       AboutHaapsalu,
       Rsvp,
       Schedule
+    },
+    props: {
+      visible: Boolean
     }
   }
 </script>
 
 <style>
-  .modal {
+  .content-container {
     position: fixed;
     top: 0;
     left: 0;
@@ -47,9 +50,19 @@
     width: 100%;
     opacity: 0;
     visibility: hidden;
+    background: #402f44 url(/static/img/content-bg.jpg) no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
   }
-  .modal.visible {
+  .content-container.visible {
     opacity: 1;
     visibility: visible;
+    transition: opacity 0.7s 0.6s, visibility 0s;
+  }
+  .content-container section {
+    max-width: 40em;
+    width: 100%;
+    margin: 1em auto;
   }
 </style>

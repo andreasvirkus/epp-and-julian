@@ -1,10 +1,10 @@
 <template>
   <div id="app" class="app-container">
-    <landing />
+    <landing @trigger="triggerOverlay" />
 
-    <content />
+    <site-content :visible="contentVisibility" />
 
-    <overlay />
+    <overlay :animate="animate" />
   </div>
 </template>
 
@@ -15,10 +15,22 @@
 
   export default {
     name: 'app',
+    data () {
+      return {
+        animate: false,
+        contentVisibility: false
+      }
+    },
     components: {
       Landing,
-      Content,
+      'site-content': Content,
       Overlay
+    },
+    methods: {
+      triggerOverlay () {
+        this.animate = true
+        this.contentVisibility = true
+      }
     }
   }
 </script>

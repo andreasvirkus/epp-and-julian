@@ -1,11 +1,9 @@
 <template>
   <main class="invite-container">
-    <div class="center">
-      <h1>You are cordially invited...</h1>
+    <h1>You are cordially invited...</h1>
 
-      <a href="#0" class="modal-trigger">→</a>
-    </div>
-  </main> <!-- .cd-main-content -->
+    <a href="#" class="modal-trigger" @click="$emit('trigger')">→</a>
+  </main>
 </template>
 
 <script>

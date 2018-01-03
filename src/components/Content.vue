@@ -55,6 +55,19 @@
     color: #fff;
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
   }
+  .content-container h1 {
+    font-family: 'IM Fell Double Pica', serif;
+    font-size: 4rem;
+    text-align: center;
+  }
+  .content-container h1::after {
+    content: '';
+    display: block;
+    width: 130px;
+    height: 18px;
+    background: url(/static/img/separator.svg) no-repeat center center;
+    margin: .2em auto 0;
+  }
   .content-container.visible {
     opacity: 1;
     visibility: visible;

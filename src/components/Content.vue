@@ -1,7 +1,7 @@
 <template>
   <div :class="['content-container', { visible }]">
     <section class="content">
-      <h1>Some title</h1>
+      <h1>To our wedding</h1>
 
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit.

@@ -1,5 +1,7 @@
 <template>
   <section>
+    <h2>Accommodation</h2>
+
     <p>Lorem ipsum</p>
   </section>
 </template>

@@ -1,6 +1,8 @@
 <template>
   <section>
-    <p>Lorem ipsum</p>
+    <h2>RSVP</h2>
+    
+    <p>Choice be yours (not really though)</p>
   </section>
 </template>
 

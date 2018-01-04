@@ -29,12 +29,14 @@
   }
 
   main {
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     width: 100%;
     min-height: 100vh;
+    height: 100%;
     font-family: 'Pinyon Script', cursive;
     background-color: #223;
     flex-direction: column;

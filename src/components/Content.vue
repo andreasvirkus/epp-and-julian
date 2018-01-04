@@ -1,7 +1,7 @@
 <template>
   <div :class="['content-container', { visible }]">
     <section class="content">
-      <h1>Some introductory content</h1>
+      <h1>Some title</h1>
 
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -42,25 +42,38 @@
 
 <style>
   .content-container {
-    position: fixed;
     top: 0;
     left: 0;
     z-index: 3;
     height: 100%;
     width: 100%;
+    margin-bottom: 5em;
     opacity: 0;
     visibility: hidden;
     background: #402f44 url(/static/img/content-bg.jpg) no-repeat center center;
     background-size: cover;
     color: #fff;
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  }
-  .content-container h1 {
-    font-family: 'IM Fell Double Pica', serif;
-    font-size: 4rem;
     text-align: center;
   }
-  .content-container h1::after {
+  .content-container h1,
+  .content-container h2,
+  .content-container h3 {
+    font-family: 'IM Fell Double Pica', serif;
+    text-align: center;
+  }
+  .content-container h1 {
+    font-size: 4rem;
+  }
+  .content-container h2 {
+    font-size: 3rem;
+  }
+  .content-container h3 {
+    font-size: 2.5rem;
+  }
+  .content-container h1::after,
+  .content-container h2::after,
+  .content-container h3::after {
     content: '';
     display: block;
     width: 130px;
@@ -68,10 +81,17 @@
     background: url(/static/img/separator.svg) no-repeat center center;
     margin: .2em auto 0;
   }
+
+  .content-container h2::after,
+  .content-container h3::after {
+    width: 95px;
+    margin-top: 0;
+  }
+
   .content-container.visible {
     opacity: 1;
     visibility: visible;
-    transition: opacity 0.7s 0.6s, visibility 0s;
+    transition: opacity 0.7s 0.5s, visibility 0s;
   }
   .content-container section {
     max-width: 40em;

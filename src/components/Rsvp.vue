@@ -7,10 +7,10 @@
     </div>
 
     <form v-else name="submitRsvp" action="/?rsvp" netlify>
-      <label>Name: <input type="text"></label>
-      <label>Accompany: <input type="text"></label>
-      <label>Culinary preference: <input type="text"></label>
-      <label>Name: <input type="text"></label>
+      <label>Name <input type="text"></label>
+      <label>Accompany <input type="text"></label>
+      <label>Culinary preference <input type="text"></label>
+      <label>Name <input type="text"></label>
     </form>
   </section>
 </template>
@@ -27,8 +27,13 @@
 </script>
 
 <style>
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
   label {
-    display: block;
+    display: flex;
   }
 
   label + label {
@@ -36,8 +41,14 @@
   }
 
   input {
+    flex: 1;
     border: none;
     border-bottom: 1px solid #fefefe;
     background: none;
+    color: #fff;
+    margin-left: 2em;
+  }
+  input:focus {
+    outline: none;
   }
 </style>

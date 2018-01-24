@@ -53,13 +53,15 @@
     background: #402f44 url(/static/img/content-bg.jpg) no-repeat center center;
     background-size: cover;
     color: #fff;
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    /* font-family: 'Roboto', Helvetica, Arial, sans-serif; */
+    font-family: 'Slabo 27px', serif;
     text-align: center;
   }
   .content-container h1,
   .content-container h2,
   .content-container h3 {
     font-family: 'IM Fell Double Pica', serif;
+    /* font-family: 'Slabo 27px', serif; */
     text-align: center;
   }
   .content-container h1 {
@@ -97,5 +99,12 @@
     max-width: 40em;
     width: 100%;
     margin: 1em auto;
+  }
+
+  p {
+    font-size: 1.2em;
+    line-height: 1.4em;
+    letter-spacing: 1px;
+    color: #ecdfdf;
   }
 </style>

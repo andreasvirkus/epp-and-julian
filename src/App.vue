@@ -32,6 +32,15 @@
         this.contentVisibility = true
       }
     }
+    // mounted () {
+    //   window.onhashchange = () => {
+    //     console.log('back event')
+    //     if (this.contentVisibility && this.animate) {
+    //       this.animate = false
+    //       this.contentVisibility = false
+    //     }
+    //   }
+    // }
   }
 </script>
 
@@ -39,6 +48,13 @@
   /* html {
     margin-left: calc(100vw - 100%);
   } */
+
+  @font-face {
+    font-family: 'Nightingale';
+    src: url('/static/fonts/nightingale.ttf');
+    src: url('/static/fonts/nightingale.ttf') format('truetype'),
+      url('/static/fonts/nightingale.otf') format('opentype');
+  }
 
   body {
     margin: 0;
@@ -55,13 +71,5 @@
   .app-container.overlay {
     height: 100vh;
     overflow: hidden;
-  }
-
-  section {
-    min-height: 10em;
-    max-width: 40em;
-    width: 100%;
-    margin: 0 auto;
-    padding: 1 em;
   }
 </style>

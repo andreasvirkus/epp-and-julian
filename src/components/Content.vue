@@ -1,21 +1,23 @@
 <template>
-  <div :class="['content-container', { visible }]">
-    <section class="content">
-      <h1>To our wedding</h1>
+  <main :class="['content-container', { visible }]">
+    <div class="scroll-container">
+      <section class="content">
+        <h1>To our wedding</h1>
 
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Ad modi repellendus, optio eveniet eligendi molestiae?
-        Fugiat, temporibus!
-      </p>
-    </section>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Ad modi repellendus, optio eveniet eligendi molestiae?
+          Fugiat, temporibus!
+        </p>
+      </section>
 
-    <our-story />
-    <accommodation />
-    <about-haapsalu />
-    <rsvp />
-    <schedule />
-  </div>
+      <our-story />
+      <accommodation />
+      <about-haapsalu />
+      <rsvp />
+      <schedule />
+    </div>
+  </main>
 </template>
 
 <script>
@@ -41,53 +43,52 @@
 </script>
 
 <style>
-  .content-container {
+  main {
     top: 0;
     left: 0;
     z-index: 3;
-    height: 100%;
     width: 100%;
-    margin-bottom: 5em;
     opacity: 0;
     visibility: hidden;
     background: #402f44 url(/static/img/content-bg.jpg) no-repeat center center;
     background-size: cover;
     color: #fff;
-    /* font-family: 'Roboto', Helvetica, Arial, sans-serif; */
-    font-family: 'Slabo 27px', serif;
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .scroll-container {
+    height: 100vh;
+    margin-bottom: 5em;
+    overflow-y: scroll;
+  }
+  h1,
+  h2,
+  h3 {
+    font-family: 'Nightingale', serif;
     text-align: center;
   }
-  .content-container h1,
-  .content-container h2,
-  .content-container h3 {
-    font-family: 'IM Fell Double Pica', serif;
-    /* font-family: 'Slabo 27px', serif; */
-    text-align: center;
-  }
-  .content-container h1 {
+  h1 {
     font-size: 4rem;
   }
-  .content-container h2 {
+  h2 {
     font-size: 3rem;
+    margin-bottom: 4rem;
   }
-  .content-container h3 {
+  h3 {
     font-size: 2.5rem;
   }
-  .content-container h1::after,
-  .content-container h2::after,
-  .content-container h3::after {
+  h1::after,
+  h2::after,
+  h3::after {
     content: '';
     display: block;
     width: 130px;
     height: 18px;
     background: url(/static/img/separator.svg) no-repeat center center;
-    margin: .2em auto 0;
-  }
-
-  .content-container h2::after,
-  .content-container h3::after {
-    width: 95px;
-    margin-top: 0;
+    margin: 0 auto;
   }
 
   .content-container.visible {
@@ -95,10 +96,17 @@
     visibility: visible;
     transition: opacity 0.7s 0.5s, visibility 0s;
   }
-  .content-container section {
+  section {
     max-width: 40em;
     width: 100%;
-    margin: 1em auto;
+    margin: 2em auto;
+  }
+
+  section + section {
+    margin-top: 15em;
+  }
+  section:last-child {
+    margin-bottom: 8em;
   }
 
   p {

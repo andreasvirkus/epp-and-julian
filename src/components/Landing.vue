@@ -1,9 +1,9 @@
 <template>
-  <main class="invite-container">
-    <h1>You are cordially invited...</h1>
+  <dialog class="invite-container">
+    <p>You are cordially invited...</p>
 
-    <a href="#" class="modal-trigger" @click="$emit('trigger')">→</a>
-  </main>
+    <a href="#invite" class="modal-trigger" @click="$emit('trigger')">&gt;&gt;</a>
+  </dialog>
 </template>
 
 <script>
@@ -13,22 +13,24 @@
 </script>
 
 <style scoped>
-  h1, a {
+  p, a {
     font-size: 3rem;
     text-decoration: none;
     color: #fff;
+    /* font-family: 'Nightingale', serif; */
   }
 
   a {
     display: block;
     transition: transform ease-out 0.2s;
+    font-family: 'Nightingale';
   }
 
   a:hover {
     transform: translateX(15px);
   }
 
-  main {
+  dialog {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -40,5 +42,7 @@
     font-family: 'Pinyon Script', cursive;
     background-color: #223;
     flex-direction: column;
+    padding: 0;
+    border: none;
   }
 </style>

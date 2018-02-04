@@ -30,17 +30,16 @@
       triggerOverlay () {
         this.animate = true
         this.contentVisibility = true
+
+        window.onhashchange = () => {
+          console.log('back event', window.location.hash)
+          if (this.contentVisibility && this.animate && !window.location.hash) {
+            this.animate = false
+            this.contentVisibility = false
+          }
+        }
       }
     }
-    // mounted () {
-    //   window.onhashchange = () => {
-    //     console.log('back event')
-    //     if (this.contentVisibility && this.animate) {
-    //       this.animate = false
-    //       this.contentVisibility = false
-    //     }
-    //   }
-    // }
   }
 </script>
 

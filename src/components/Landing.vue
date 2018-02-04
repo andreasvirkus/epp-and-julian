@@ -24,6 +24,7 @@
     display: block;
     transition: transform ease-out 0.2s;
     font-family: 'Nightingale';
+    padding: 0 2em;
   }
 
   a:hover {

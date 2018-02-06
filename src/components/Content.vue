@@ -69,6 +69,7 @@
   h3 {
     font-family: 'Nightingale', serif;
     text-align: center;
+    line-height: 3em;
   }
   h1 {
     font-size: 4rem;

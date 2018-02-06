@@ -53,6 +53,7 @@ export default {
     width: 2500%;
     background: url(/static/img/ink.png) no-repeat 0 0;
     background-size: 100% 100%;
+    filter: hue-rotate(300deg) saturate(130%) contrast(130%);
   }
 
   .transition-overlay.visible {

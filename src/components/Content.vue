@@ -14,8 +14,8 @@
       <our-story />
       <accommodation />
       <about-haapsalu />
-      <rsvp />
       <schedule />
+      <rsvp />
     </div>
   </main>
 </template>
@@ -44,13 +44,14 @@
 
 <style>
   main {
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 3;
     width: 100%;
     opacity: 0;
     visibility: hidden;
-    background: #402f44 url(/static/img/content-bg.jpg) no-repeat center center;
+    background: #402f44 url(/static/img/content-bg.blue.jpg) no-repeat center center;
     background-size: cover;
     color: #fff;
     font-family: 'Libre Baskerville', serif;
@@ -73,6 +74,7 @@
   }
   h1 {
     font-size: 4rem;
+    line-height: 2em;
   }
   h2 {
     font-size: 3rem;
@@ -112,8 +114,17 @@
 
   p {
     font-size: 1.2em;
-    line-height: 1.4em;
+    line-height: 1.8em;
     letter-spacing: 1px;
     color: #ecdfdf;
+  }
+
+  @media (max-width: 35em) {
+    h1 {
+      font-size: 2.5em;
+    }
+    h2 {
+      font-size: 1.5em;
+    }
   }
 </style>

@@ -1,29 +1,16 @@
 <template>
   <dialog class="invite-container">
-    <img :src="stamp">
-
     <p>You are cordially invited...</p>
 
     <a href="#invite" class="modal-trigger" @click="$emit('trigger')">&gt;&gt;</a>
   </dialog>
 </template>
 
-<script>
-  import stamp from '../assets/img/ej_stamp.png'
-
-  export default {
-    name: 'landing',
-    data () {
-      return { stamp }
-    }
-  }
-</script>
-
 <style scoped>
   p, a {
     font-size: 45px;
     text-decoration: none;
-    color: #35495E;
+    color: #fff;
     font-family: 'Nightingale', serif;
     width: 90%;
     max-width: 20em;
@@ -35,7 +22,6 @@
     display: block;
     transition: transform ease-out 0.2s;
     font-family: 'Nightingale';
-    padding: 0 2em;
     margin-top: 0;
   }
 
@@ -56,12 +42,21 @@
     text-align: center;
     width: 100%;
     min-height: 100vh;
-    height: 100%;
     font-family: 'Pinyon Script', cursive;
-    background-color: #223;
-    background-image: url(/static/img/paper-bg.jpg);
+    background-color: #15203B;
+    background: #15203B url(/static/img/paper-bg.jpg) center no-repeat;
+    background-size: cover;
     flex-direction: column;
     padding: 0;
     border: none;
+  }
+
+  @media (max-width: 35em) {
+    p, a {
+      margin: 0;
+      padding: 0;
+      font-size: 30px;
+      line-height: 70px;
+    }
   }
 </style>

@@ -1,8 +1,29 @@
 <template>
-  <!-- <section>
+  <section>
     <h2>RSVP</h2>
 
-    <div v-if="submitted">
+    <p>Please let us know before the <strong>31st of March</strong> if you wish to join us for the celebration of our marriage.</p>
+
+    <p>Talk or write to Epp:
+      <a href="mailto:epp.olekors@gmail.com">
+        epp.olekors@gmail.com
+        <svg class="link-svgline"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_line"></use></svg>
+      </a>,
+      <a href="tel:+3725171469">
+        +372 5171469
+        <svg class="link-svgline"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_line"></use></svg>
+      </a></p>
+    <p>Talk or write to Julian:
+      <a href="mailto:julian.linke@web.de">
+        julian.linke@web.de
+        <svg class="link-svgline"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_line"></use></svg>
+      </a>,
+      <a href="tel:+37253940512">
+        +372 53940512
+        <svg class="link-svgline"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_line"></use></svg>
+      </a></p>
+
+    <!-- <div v-if="submitted">
       Thanks! We'll see you then!
     </div>
 
@@ -11,10 +32,10 @@
       <label>Accompany <input type="text"></label>
       <label>Culinary preference <input type="text"></label>
       <label>Name <input type="text"></label>
-    </form>
-  </section> -->
+    </form> -->
+  </section>
 
-  <section id="invitation" class="panel inview" name="The Invitation" style="height: 800px;">
+  <!-- <section id="invitation" class="panel inview" name="The Invitation" style="height: 800px;">
     <div class="b" style="height: 800px;"></div>
     <div class="c" style="margin-top: 208px;">
       <div class="caption">
@@ -36,7 +57,7 @@
 
     <div class="d" style="height: 250px; top: 551px;"></div>
 
-  </section>
+  </section> -->
 </template>
 
 <script>

@@ -9,29 +9,32 @@
       <section class="content">
         <h1>To our wedding!</h1>
 
-        <p>
+        <h3>
           Below you'll find various information about the location, schedule and how to RSVP.
           See you there!
-        </p>
+        </h3>
       </section>
 
       <our-story />
+      <rsvp />
       <accommodation />
       <about-haapsalu />
       <schedule />
-      <rsvp />
+      <traditions />
 
-      <iframe src="https://www.google.com/maps/d/embed?mid=1M75KTyBh-5mRZC_pWPFLN3W673rlUz6j&hl=et" width="640" height="480"></iframe>
+      <area-map />
     </div>
   </main>
 </template>
 
 <script>
-  import OurStory from './OurStory'
-  import Accommodation from './Accommodation'
-  import AboutHaapsalu from './AboutHaapsalu'
   import Rsvp from './Rsvp'
   import Schedule from './Schedule'
+  import OurStory from './OurStory'
+  import Traditions from './Traditions'
+  import Accommodation from './Accommodation'
+  import AboutHaapsalu from './AboutHaapsalu'
+  import AreaMap from './AreaMap'
 
   export default {
     name: 'site-content',
@@ -40,7 +43,9 @@
       Accommodation,
       AboutHaapsalu,
       Rsvp,
-      Schedule
+      Schedule,
+      Traditions,
+      AreaMap
     },
     props: {
       visible: Boolean
@@ -75,8 +80,7 @@
     display: none;
   }
   h1,
-  h2,
-  h3 {
+  h2 {
     font-family: 'Nightingale', serif;
     text-align: center;
     line-height: 3em;
@@ -90,11 +94,10 @@
     margin-bottom: 4rem;
   }
   h3 {
-    font-size: 2.5rem;
+    font-size: 1.4em;
   }
   h1::after,
-  h2::after,
-  h3::after {
+  h2::after {
     content: '';
     display: block;
     width: 130px;

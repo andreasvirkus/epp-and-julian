@@ -88,6 +88,6 @@
   }
 
   li span:last-child {
-
+    text-align: left;
   }
 </style>

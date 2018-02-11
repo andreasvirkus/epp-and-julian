@@ -4,7 +4,7 @@
 
     <site-content :visible="contentVisibility" />
 
-    <overlay :animate="animate" />
+    <overlay :animate="animate" :reverse="reverse" @reversed="reverse = false; animate = false; contentVisibility = false" />
   </div>
 </template>
 
@@ -17,7 +17,11 @@
     name: 'app',
     data () {
       return {
+        frames: 25,
+        resize: false,
+        reverse: false,
         animate: false,
+        frameProportion: 1.78, // PNG frame aspect ratio
         contentVisibility: false
       }
     },
@@ -29,16 +33,51 @@
     methods: {
       triggerOverlay () {
         this.animate = true
-        this.contentVisibility = true
+
+        // transitionLayer.addClass('visible opening');
+        setTimeout(() => {
+          this.contentVisibility = true
+        }, 400)
 
         window.onhashchange = () => {
-          console.log('back event', window.location.hash)
-          if (this.contentVisibility && this.animate && !window.location.hash) {
-            this.animate = false
-            this.contentVisibility = false
-          }
+          this.contentVisibility && this.animate && !window.location.hash && this.reverseOverlay()
         }
+      },
+      reverseOverlay () {
+        this.contentVisibility = false
+        this.reverse = true
+      },
+      init () {
+        // set transitionBackground dimensions
+        const windowWidth = window.innerWidth
+        const windowHeight = window.innerHeight
+        let unitHeight, unitWidth
+
+        if (windowWidth / windowHeight > this.frameProportion) {
+          unitWidth = windowWidth
+          unitHeight = unitWidth / this.frameProportion
+        } else {
+          unitHeight = windowHeight * 1.2
+          unitWidth = unitHeight * this.frameProportion
+        }
+
+        // transitionBackground.css({
+        //   'width': unitWidth * this.frames + 'px',
+        //   'height': unitHeight + 'px'
+        // })
+
+        this.resize = false
       }
+    },
+    mounted () {
+      this.init()
+
+      window.addEventListener('resize', () => {
+        if (!this.resize) {
+          this.resize = true
+          !window.requestAnimationFrame ? setTimeout(this.init, 300) : window.requestAnimationFrame(this.init)
+        }
+      })
     }
   }
 </script>

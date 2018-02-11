@@ -1,5 +1,9 @@
 <template>
-  <div :class="['transition-overlay', { visible: animate }, { opening: animate }]">
+  <div :class="['transition-overlay',
+    { visible: animate || reverse },
+    { opening: animate || reverse },
+    { closing: reverse }]"
+    ref="overlay">
     <div class="bg-layer"></div>
   </div>
 </template>
@@ -7,8 +11,21 @@
 <script>
 export default {
   name: 'overlay',
-  props: {
-    animate: Boolean
+  data () {
+    return {
+      classList: ['closing', 'opening', 'visible']
+    }
+  },
+  props: ['animate', 'reverse'],
+  watch: {
+    reverse () {
+      console.log('$refs', this.$refs)
+
+      setTimeout(() => {
+        this.$refs.overlay.classList.remove(...this.classList)
+        this.$emit('reversed')
+      }, 700)
+    }
   }
 }
 </script>
@@ -64,6 +81,10 @@ export default {
     animation: overlay-sequence 0.8s steps(24);
     animation-fill-mode: forwards;
   }
+  .transition-overlay.closing .bg-layer {
+    animation: overlay-reverse-sequence 0.8s steps(24);
+    animation-fill-mode: forwards;
+  }
 
   @keyframes overlay-sequence {
     0% {
@@ -71,6 +92,15 @@ export default {
     }
     100% {
       transform: translateY(-50%) translateX(-98%);
+    }
+  }
+
+  @keyframes overlay-reverse-sequence {
+    0% {
+      transform: translateY(-50%) translateX(-98%);
+    }
+    100% {
+      transform: translateY(-50%) translateX(-2%);
     }
   }
 </style>

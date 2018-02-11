@@ -5,7 +5,7 @@
       src="https://www.google.com/maps/d/embed?mid=1M75KTyBh-5mRZC_pWPFLN3W673rlUz6j&hl=et&format=png&maptype=roadmap&size=480x360"
       frameborder="0"
       style="border:0"
-      width="640"
+      width="100%"
       height="260"></iframe>
  </section>
 </template>

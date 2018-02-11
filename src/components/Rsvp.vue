@@ -2,7 +2,7 @@
   <section>
     <h2>RSVP</h2>
 
-    <p>Please let us know before the <strong>31st of March</strong> if you wish to join us for the celebration of our marriage.</p>
+    <h3>Please let us know before the <strong>31st of March</strong> if you wish to join us for the celebration of our marriage.</h3>
 
     <p>Talk or write to Epp:
       <a href="mailto:epp.olekors@gmail.com">
@@ -101,5 +101,9 @@
   }
   input:focus {
     outline: none;
+  }
+
+  strong {
+    color: #cde3ed;
   }
 </style>

@@ -2,6 +2,13 @@
 
 > A wedding website as lovely as the couple itself
 
+## TODO:
+
+- Pictures for each section
+- Frames for pictures
+- Landing page arrow
+- GoogleMaps styles
+
 ## Build Setup
 
 ``` bash

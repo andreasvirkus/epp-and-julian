@@ -64,7 +64,7 @@
     visibility: hidden;
     background: #402f44 url(/static/img/content-bg.blue.jpg) no-repeat center center;
     background-size: cover;
-    color: #fff;
+    color: #ecdfdf;
     font-family: 'Libre Baskerville', serif;
     text-align: center;
     height: 100vh;
@@ -95,8 +95,9 @@
   }
   h3 {
     font-size: 1.4em;
+    line-height: 1.6em;
   }
-  h1::after,
+  /* h1::after,
   h2::after {
     content: '';
     display: block;
@@ -104,7 +105,7 @@
     height: 18px;
     background: url(/static/img/separator.svg) no-repeat center center;
     margin: 0 auto;
-  }
+  } */
 
   .content-container.visible {
     opacity: 1;
@@ -125,10 +126,9 @@
   }
 
   p {
-    font-size: 1.2em;
+    font-size: 1em;
     line-height: 1.8em;
     letter-spacing: 1px;
-    color: #ecdfdf;
   }
 
   main a {

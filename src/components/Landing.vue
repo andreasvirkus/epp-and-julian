@@ -1,23 +1,23 @@
 <template>
   <dialog class="invite-container">
+    <img :src="stamp" alt="To the invite &gt;&gt;">
     <p>You are cordially invited...</p>
 
     <a href="#invite" class="modal-trigger" @click="$emit('trigger')">
       &gt;&gt;
-      <!-- <img :src="pointer" alt="To the invite &gt;&gt;"> -->
     </a>
   </dialog>
 </template>
 
 <script>
-  // import pointer from '../assets/img/pointing.png'
+  import stamp from '../assets/img/ej_stamp.png'
 
-  // export default {
-  //   name: 'landing',
-  //   data () {
-  //     return { pointer }
-  //   }
-  // }
+  export default {
+    name: 'landing',
+    data () {
+      return { stamp }
+    }
+  }
 </script>
 
 <style scoped>
@@ -46,7 +46,7 @@
 
   img {
     width: 125px;
-    /* transform: rotate(27deg); */
+    transform: rotate(27deg);
   }
 
   dialog {

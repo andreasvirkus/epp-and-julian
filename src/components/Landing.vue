@@ -2,26 +2,41 @@
   <dialog class="invite-container">
     <p>You are cordially invited...</p>
 
-    <a href="#invite" class="modal-trigger" @click="$emit('trigger')">&gt;&gt;</a>
+    <a href="#invite" class="modal-trigger" @click="$emit('trigger')">
+      &gt;&gt;
+      <!-- <img :src="pointer" alt="To the invite &gt;&gt;"> -->
+    </a>
   </dialog>
 </template>
 
+<script>
+  // import pointer from '../assets/img/pointing.png'
+
+  // export default {
+  //   name: 'landing',
+  //   data () {
+  //     return { pointer }
+  //   }
+  // }
+</script>
+
 <style scoped>
   p, a {
-    font-size: 45px;
+    font-size: 1.2em;
     text-decoration: none;
     color: #fff;
-    font-family: 'Nightingale', serif;
+    font-family: 'Libre Baskerville', serif;
     width: 90%;
     max-width: 20em;
-    line-height: 101px;
-    margin: 1em 0 0;
+    /* line-height: 101px; */
+    margin: 1em 0;
   }
 
   a {
     display: block;
     transition: transform ease-out 0.2s;
-    font-family: 'Nightingale';
+    font-size: 45px;
+    font-family: 'Nightingale', serif;
     margin-top: 0;
   }
 
@@ -31,7 +46,7 @@
 
   img {
     width: 125px;
-    transform: rotate(27deg);
+    /* transform: rotate(27deg); */
   }
 
   dialog {

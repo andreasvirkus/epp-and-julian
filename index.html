@@ -11,17 +11,29 @@
     <!--[if IE]><link rel="shortcut icon" href="/static/img/icons/favicon.ico"><![endif]-->
     <!-- Add to home screen for Android and modern mobile browsers -->
     <link rel="manifest" href="<%= htmlWebpackPlugin.files.publicPath %>static/manifest.json">
-    <meta name="theme-color" content="#223223">
+    <!-- <meta name="theme-color" content="#223223"> -->
+    <meta name="theme-color" content="#212167">
 
     <!-- Add to home screen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="Epp &amp; Julian">
     <link rel="apple-touch-icon" href="<%= htmlWebpackPlugin.files.publicPath %>static/img/icons/apple-touch-icon-152x152.png">
-    <link rel="mask-icon" href="<%= htmlWebpackPlugin.files.publicPath %>static/img/icons/safari-pinned-tab.svg" color="#223223">
+    <link rel="mask-icon" href="<%= htmlWebpackPlugin.files.publicPath %>static/img/icons/safari-pinned-tab.svg" color="#212167">
     <!-- Add to home screen for Windows -->
     <meta name="msapplication-TileImage" content="<%= htmlWebpackPlugin.files.publicPath %>static/img/icons/msapplication-icon-144x144.png">
-    <meta name="msapplication-TileColor" content="#223223">
+    <meta name="msapplication-TileColor" content="#212167">
+
+    <!-- Suggested usage by https://realfavicongenerator.net/favicon_result?file_id=p1c64ul70e8vkl4q1shr188r3ds6 -->
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="&lt;%= htmlWebpackPlugin.files.publicPath %&gt;static/img/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="&lt;%= htmlWebpackPlugin.files.publicPath %&gt;static/img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="&lt;%= htmlWebpackPlugin.files.publicPath %&gt;static/img/icons/favicon-16x16.png">
+    <link rel="manifest" href="&lt;%= htmlWebpackPlugin.files.publicPath %&gt;static/img/icons/site.webmanifest">
+    <link rel="mask-icon" href="&lt;%= htmlWebpackPlugin.files.publicPath %&gt;static/img/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="&lt;%= htmlWebpackPlugin.files.publicPath %&gt;static/img/icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="msapplication-config" content="&lt;%= htmlWebpackPlugin.files.publicPath %&gt;static/img/icons/browserconfig.xml"> -->
+
     <% for (var chunk of webpack.chunks) {
         for (var file of chunk.files) {
           if (file.match(/\.(js|css)$/)) { %>

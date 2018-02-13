@@ -21,11 +21,10 @@
       <our-story />
       <rsvp />
       <accommodation />
+      <area-map />
       <about-haapsalu />
       <schedule />
       <traditions />
-
-      <area-map />
     </div>
 
     <button @click.prevent="scrollTop" class="back-to-top">
@@ -142,7 +141,6 @@
     background: url(/static/img/separator.svg) no-repeat center center;
     margin: 0 auto;
   } */
-
   .content-container.visible {
     opacity: 1;
     visibility: visible;
@@ -165,6 +163,14 @@
     font-size: 1em;
     line-height: 1.8em;
     letter-spacing: 1px;
+  }
+  main h3,
+  main p {
+    text-align: left;
+  }
+
+  main .center {
+    text-align: center;
   }
 
   main a {

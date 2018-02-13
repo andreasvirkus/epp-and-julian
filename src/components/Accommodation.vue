@@ -15,7 +15,8 @@
         <svg class="link-svgline"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_line"></use></svg>
       </a>
     </p>
-    <p>_____________<br>Best hotel/hostel accommodations in Haapsalu:</p>
+    <p class="center">_______</p>
+    <p>Best hotel/hostel accommodations in Haapsalu:</p>
 
     <ul>
       <li>
@@ -62,7 +63,7 @@
       </li>
     </ul>
 
-    <p>_______</p>
+    <p class="center">_______</p>
 
     <h3>Tallinn</h3>
     <p>Best hotel/hostel accommodations in Tallinn:</p>
@@ -78,37 +79,6 @@
       <li><a href="http://16eur.ee/fat-margarets/" target="_blank" rel="noopener"><strong>Fat Margaret Hostel</strong>        <svg class="link-svgline"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_line"></use></svg>
 </a> (5min walking from the Old Town, private rooms and dorms available. Sauna in the basement, parking available)</li>
     </ul>
-
-    <!-- <div id="jp-post-flair" class="sharedaddy sd-like-enabled sd-sharing-enabled"> -->
-      <!-- <div class="sharedaddy sd-sharing-enabled">
-        <div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing">
-          <h3 class="sd-title">Share this:</h3>
-          <div class="sd-content">
-            <ul>
-              <li class="share-twitter">
-                <a rel="nofollow" data-shared="sharing-twitter-46" class="share-twitter sd-button share-icon" href="https://eppandjulian.wordpress.com/2017/12/30/accommodation/?share=twitter&amp;nb=1" target="_blank" title="Click to share on Twitter">
-                  <span>Twitter</span>
-                  <svg class="link-svgline"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_line"></use></svg>
-                </a>
-              </li>
-              <li class="share-facebook">
-                <a rel="nofollow" data-shared="sharing-facebook-46" class="share-facebook sd-button share-icon" href="https://eppandjulian.wordpress.com/2017/12/30/accommodation/?share=facebook&amp;nb=1" target="_blank" title="Share on Facebook">
-                  <span>Facebook</span>
-                  <svg class="link-svgline"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_line"></use></svg>
-                </a>
-              </li>
-              <li class="share-google-plus-1">
-                <a rel="nofollow" data-shared="sharing-google-46" class="share-google-plus-1 sd-button share-icon" href="https://eppandjulian.wordpress.com/2017/12/30/accommodation/?share=google-plus-1&amp;nb=1" target="_blank" title="Click to share on Google+">
-                  <span>Google</span>
-                  <svg class="link-svgline"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_line"></use></svg>
-                </a>
-              </li>
-              <li class="share-end"></li>
-            </ul>
-          </div>
-        </div>
-      </div> -->
-    <!-- </div> -->
   </section>
 </template>
 

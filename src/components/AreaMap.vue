@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="map">
     <h2></h2>
     <iframe
       src="https://www.google.com/maps/d/embed?mid=1M75KTyBh-5mRZC_pWPFLN3W673rlUz6j&hl=en&format=png&maptype=roadmap&size=480x360"

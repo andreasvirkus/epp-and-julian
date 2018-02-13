@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="rsvp">
     <h2>RSVP</h2>
 
     <h3>Please let us know before the <strong>31st of March</strong> if you wish to join us for the celebration of our marriage.</h3>

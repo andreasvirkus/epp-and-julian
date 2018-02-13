@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="about">
     <h2>About Haapsalu</h2>
 
     <h3>You know very little of Haapsalu? No worries. Let us tell you about it.</h3>

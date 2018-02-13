@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="traditions">
     <h2>Traditions</h2>
 
     <p>Some lady running around kissing people!</p>
@@ -13,5 +13,5 @@
 </script>
 
 <style scoped>
- 
+
 </style>

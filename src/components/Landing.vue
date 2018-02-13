@@ -1,21 +1,23 @@
 <template>
   <dialog class="invite-container">
-    <img :src="stamp" alt="To the invite &gt;&gt;">
+    <img :src="stamp" alt="Our wedding stamp">
     <p>You are cordially invited...</p>
 
     <a href="#invite" class="modal-trigger" @click="$emit('trigger')">
-      &gt;&gt;
+      <!-- &gt;&gt; -->
+      <img :src="arrow" alt="To the invite &gt; &gt;">
     </a>
   </dialog>
 </template>
 
 <script>
   import stamp from '../assets/img/ej_stamp.png'
+  import arrow from '../assets/img/ejw-arrow.png'
 
   export default {
     name: 'landing',
     data () {
-      return { stamp }
+      return { stamp, arrow }
     }
   }
 </script>
@@ -44,7 +46,7 @@
     transform: translateX(15px);
   }
 
-  img {
+  dialog > img {
     width: 125px;
     transform: rotate(27deg);
   }

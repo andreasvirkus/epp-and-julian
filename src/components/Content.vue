@@ -1,6 +1,6 @@
 <template>
   <main :class="['content-container', { visible }]">
-    <div class="scroll-container">
+    <div class="scroll-container" ref="scroll">
       <div class="svg-container" id="top">
         <svg viewBox="0 0 400 20" xmlns="http://www.w3.org/2000/svg">
           <path id="svg_line" d="m 1.986,8.91 c 55.429038,4.081 111.58111,5.822 167.11781,2.867 22.70911,-1.208 45.39828,-0.601 68.126,-0.778 28.38173,-0.223 56.76079,-1.024 85.13721,-1.33 24.17379,-0.261 48.42731,0.571 72.58115,0.571"></path>
@@ -28,9 +28,9 @@
       <area-map />
     </div>
 
-    <a href="#top" class="back-to-top">
+    <button @click.prevent="scrollTop" class="back-to-top">
       <img :src="arrow">
-    </a>
+    </button>
   </main>
 </template>
 
@@ -62,6 +62,15 @@
     },
     data () {
       return { arrow }
+    },
+    methods: {
+      scrollTop () {
+        this.$refs.scroll.scrollTo({
+          'behavior': 'smooth',
+          'left': 0,
+          'top': document.body.offsetTop
+        })
+      }
     }
   }
 </script>
@@ -99,6 +108,12 @@
     right: 15px;
     width: 60px;
     height: 60px;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  .back-to-top:focus {
+    outline: none;
   }
   h1,
   h2 {
@@ -140,7 +155,7 @@
   }
 
   section + section {
-    margin-top: 10em;
+    margin-top: 5em;
   }
   section:last-child {
     margin-bottom: 8em;

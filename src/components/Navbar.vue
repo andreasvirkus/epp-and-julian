@@ -19,4 +19,9 @@
     justify-content: space-around;
   }
 
+  @media (max-width: 35em) {
+    nav {
+     font-size: 0.7em;
+    }
+  }
 </style>

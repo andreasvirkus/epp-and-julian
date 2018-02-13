@@ -5,7 +5,7 @@
 
     <a href="#invite" class="modal-trigger" @click="$emit('trigger')">
       <!-- &gt;&gt; -->
-      <img :src="arrow" alt="To the invite &gt; &gt;">
+      <img :src="arrow" alt="To the invite &gt; &gt;" class="content-trigger">
     </a>
   </dialog>
 </template>
@@ -49,6 +49,10 @@
   dialog > img {
     width: 125px;
     transform: rotate(27deg);
+  }
+
+  img.content-trigger {
+    width: 200px;
   }
 
   dialog {

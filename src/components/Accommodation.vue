@@ -2,7 +2,7 @@
   <section id="accommodation">
     <h2>Accommodation</h2>
 
-		<h3>Here you can find a manifold of suitable accommodations for your stay in Haapsalu and Tallinn. Feel free to browse around and do not hesitate to contact us for additional questions.</h3>
+		<h3 class="center">Here you can find a manifold of suitable accommodations for your stay in Haapsalu and Tallinn. Feel free to browse around and do not hesitate to contact us for additional questions.</h3>
     <h3>Haapsalu</h3>
     <p>
       <a href="https://www.airbnb.com/s/Haapsalu--Haapsalu-linn--Estonia/homes?refinement_paths%5B%5D=%2Ffor_you&amp;place_id=ChIJjQO0nnSn8kYRMGb8GG2zAAQ&amp;allow_override%5B%5D=&amp;checkin=2018-08-11&amp;checkout=2018-08-12&amp;s_tag=ug3WhLte" target="_blank" rel="noopener">
@@ -15,7 +15,6 @@
         <svg class="link-svgline"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_line"></use></svg>
       </a>
     </p>
-    <p class="center">_______</p>
     <p>Best hotel/hostel accommodations in Haapsalu:</p>
 
     <ul>
@@ -63,8 +62,6 @@
       </li>
     </ul>
 
-    <p class="center">_______</p>
-
     <h3>Tallinn</h3>
     <p>Best hotel/hostel accommodations in Tallinn:</p>
     <p><a href="https://www.airbnb.com/s/Tallinn/homes?allow_override%5B%5D=&amp;s_tag=DZoSoEno" target="_blank" rel="noopener">AirBnBs in Tallinn
@@ -89,5 +86,7 @@
 </script>
 
 <style>
-
+  ul {
+    text-align: left;
+  }
 </style>

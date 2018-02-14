@@ -12,7 +12,7 @@
       <section class="content">
         <h1>To our wedding!</h1>
 
-        <h3>
+        <h3 class="center">
           Below you'll find various information about the location, schedule and how to RSVP.
           See you there!
         </h3>

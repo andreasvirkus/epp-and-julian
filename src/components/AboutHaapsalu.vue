@@ -2,7 +2,7 @@
   <section id="about">
     <h2>About Haapsalu</h2>
 
-    <h3>You know very little of Haapsalu? No worries. Let us tell you about it.</h3>
+    <h3 class="center">You know very little of Haapsalu? No worries. Let us tell you about it.</h3>
 
     <p>Haapsalu is a small coastal town with ten thousand inhabitants and it holds a very dear
       spot in our hearts. Haapsalu has been also loved by tzars, composers, artists and Finnish tourists.</p>

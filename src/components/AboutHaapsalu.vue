@@ -31,7 +31,3 @@
     name: 'about-haapsalu'
   }
 </script>
-
-<style>
-
-</style>

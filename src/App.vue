@@ -34,7 +34,6 @@
       triggerOverlay () {
         this.animate = true
 
-        // transitionLayer.addClass('visible opening');
         setTimeout(() => {
           this.contentVisibility = true
         }, 400)
@@ -47,8 +46,10 @@
         this.contentVisibility = false
         this.reverse = true
       },
+      /**
+       * Set transitionBackground (dialog elem.) dimensions
+       */
       init () {
-        // set transitionBackground dimensions
         const windowWidth = window.innerWidth
         const windowHeight = window.innerHeight
         let unitHeight, unitWidth
@@ -61,6 +62,8 @@
           unitWidth = unitHeight * this.frameProportion
         }
 
+        // TODO: implement this for <dialog> so that animation
+        // would look better on narrower viewports
         // transitionBackground.css({
         //   'width': unitWidth * this.frames + 'px',
         //   'height': unitHeight + 'px'
@@ -83,6 +86,7 @@
 </script>
 
 <style>
+  /* To remove the small content jump from the appearing scrollbar */
   /* html {
     margin-left: calc(100vw - 100%);
   } */

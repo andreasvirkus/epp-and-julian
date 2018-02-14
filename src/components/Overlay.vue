@@ -19,8 +19,6 @@ export default {
   props: ['animate', 'reverse'],
   watch: {
     reverse () {
-      console.log('$refs', this.$refs)
-
       setTimeout(() => {
         this.$refs.overlay.classList.remove(...this.classList)
         this.$emit('reversed')

@@ -1,7 +1,7 @@
 <template>
   <section id="schedule">
     <h2>Schedule</h2>
-    
+
     <ul>
       <li>
         <span class="schedule-item__time">15:30</span>
@@ -73,10 +73,6 @@
   li {
     display: flex;
   }
-
-  /* li:nth-child(even) {
-    flex-direction: row-reverse;
-  } */
   li + li {
     margin-top: 1em;
   }

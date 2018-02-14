@@ -34,30 +34,6 @@
       <label>Name <input type="text"></label>
     </form> -->
   </section>
-
-  <!-- <section id="invitation" class="panel inview" name="The Invitation" style="height: 800px;">
-    <div class="b" style="height: 800px;"></div>
-    <div class="c" style="margin-top: 208px;">
-      <div class="caption">
-        <p>Join them in celebrating the life they’ve built together and all the happiness that awaits.</p>
-        <p class="pass-inst">Guests, please enter your password to RSVP.</p>
-      </div>
-
-      <form id="password" action="password.php" method="get" _lpchecked="1">
-        <input type="text" id="field" name="pass" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAmJJREFUWAntV7uKIkEUvbYGM4KID3wEIgjKRLLpKGLgFwiCfslGhkb7IbLgAzE1GhMxWxRRBEEwmEgDERWfW6fXuttq60a2wU6B1qlzb9U5fatsKROJVigUArvd7oeAyePx6Af3qGYymT7F2h8Wi+V7Pp+fmE7iv4Sw81GieusKIzNh4puCJzdaHIagCW1F4KSeQ4O4pPLoPb/3INBGBZ7avgz8fxWIxWIUCoX43Blegbe3NwoGg88zwMoncFUB8Yokj8dDdrv9MpfHVquV/H4/iVcpc1qgKAp5vV6y2WxaWhefreB0OimXy6kGkD0YDKhSqdB2u+XJqVSK4vE4QWS5XKrx0WjEcZ/PR9lslhwOh8p1Oh2q1Wp0OBw4RwvOKpBOp1kcSdivZPLvmxrjRCKhiiOOSmQyGXp5ecFQbRhLcRDRaJTe39//BHW+2cDr6ysFAoGrlEgkwpwWS1I7z+VykdvtliHuw+Ew40vABvb7Pf6hLuMk/rGY02ImBZC8dqv04lpOYjaw2WzUPZcB2WMPZet2u1cmZ7MZTSYTNWU+n9N4PJbp3GvXYPIE2ADG9Xqder2e+kTr9ZqazSa1222eA6FqtUoQwqHCuFgscgWQWC6XaTgcEiqKQ9poNOiegbNfwWq1olKppB6yW6cWVcDHbDarIuzuBBaLhWrqVvwy/6wCMnhLXMbR4wnvtX/F5VxdAzJoRH+2BUYItlotmk6nLGW4gX6/z+IAT9+CLwPPr8DprnZ2MIwaQBsV+DBKUEfnQ8EtFRdFneBDKWhCW8EVGbdUQfxESR6qKhaHBrSgCe3fbLTpPlS70M0AAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
-        <input type="submit" value="submit" id="s">
-      </form>
-
-      <p class="pass-inst" id="donate">Thanks to our generous <a href="/about" target="_blank">friends</a> for the gift of their artwork. In lieu of a traditional registry, we’ve set up a <a href="http://mycharitywater.org/jessandruss" target="_blank">donation registry</a> with charity:water.</p>
-
-      <div id="invite-ornament">
-        <img :src="stamp">
-      </div>
-    </div>
-
-    <div class="d" style="height: 250px; top: 551px;"></div>
-
-  </section> -->
 </template>
 
 <script>

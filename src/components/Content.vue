@@ -132,15 +132,7 @@
     font-size: 1.4em;
     line-height: 1.6em;
   }
-  /* h1::after,
-  h2::after {
-    content: '';
-    display: block;
-    width: 130px;
-    height: 18px;
-    background: url(/static/img/separator.svg) no-repeat center center;
-    margin: 0 auto;
-  } */
+
   .content-container.visible {
     opacity: 1;
     visibility: visible;

@@ -4,7 +4,6 @@
     <p>You are cordially invited...</p>
 
     <a href="#invite" class="modal-trigger" @click="$emit('trigger')">
-      <!-- &gt;&gt; -->
       <img :src="arrow" alt="To the invite &gt; &gt;" class="content-trigger">
     </a>
   </dialog>
@@ -30,7 +29,6 @@
     font-family: 'Libre Baskerville', serif;
     width: 90%;
     max-width: 20em;
-    /* line-height: 101px; */
     margin: 1em 0;
   }
 

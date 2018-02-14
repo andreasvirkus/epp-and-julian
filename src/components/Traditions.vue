@@ -7,7 +7,17 @@
       The Guardians of the Bride. The Losing of the last name. And oh so much more…</p>
     <h3 class="center">Come celebrate us!<br>
       Yours truly<br>
-      Epp &amp; Julian
+      Epp &amp; Julian<br>
+      <a href="https://www.instagram.com/explore/tags/eppandjulianwedding/">#eppandjulianwedding
+        <svg class="link-svgline"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_line"></use></svg>
+      </a>
     </h3>
  </section>
 </template>
+
+<style>
+  code {
+    background-color: #999;
+    font-family: monospace;
+  }
+</style>

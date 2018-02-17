@@ -8,9 +8,17 @@
     <h3 class="center">Come celebrate us!<br>
       Yours truly<br>
       Epp &amp; Julian<br>
-      <a href="https://www.instagram.com/explore/tags/eppandjulianwedding/">#eppandjulianwedding
-        <svg class="link-svgline"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_line"></use></svg>
-      </a>
+      <nav-link to="https://www.instagram.com/explore/tags/eppandjulianwedding/"
+        title="See some lovely pictures!">#eppandjulianwedding</nav-link>
     </h3>
  </section>
 </template>
+
+<script>
+  import NavLink from './NavLink'
+
+  export default {
+    name: 'traditions',
+    components: { NavLink }
+  }
+</script>

@@ -1,19 +1,22 @@
-  <template>
-    <nav>
-      <nav-link to="#rsvp">RSVP</nav-link>
-      <nav-link to="#accommodation">Accommodation</nav-link>
-      <nav-link to="#about">About</nav-link>
-      <nav-link to="#schedule">Schedule</nav-link>
-      <nav-link to="#traditions">Traditions</nav-link>
-      <nav-link to="#map">Map</nav-link>
-      <a href="#rsvp">RSVP<svg class="link-svgline"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_line"></use></svg></a>
-      <a href="#accommodation">Accommodation<svg class="link-svgline"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_line"></use></svg></a>
-      <a href="#about">About<svg class="link-svgline"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_line"></use></svg></a>
-      <a href="#schedule">Schedule<svg class="link-svgline"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_line"></use></svg></a>
-      <a href="#traditions">Traditions<svg class="link-svgline"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_line"></use></svg></a>
-      <a href="#map">Map<svg class="link-svgline"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_line"></use></svg></a>
-    </nav>
+<template>
+  <nav>
+    <nav-link to="#rsvp">RSVP</nav-link>
+    <nav-link to="#accommodation">Accommodation</nav-link>
+    <nav-link to="#about">About</nav-link>
+    <nav-link to="#schedule">Schedule</nav-link>
+    <nav-link to="#traditions">Traditions</nav-link>
+    <nav-link to="#map">Map</nav-link>
+  </nav>
 </template>
+
+<script>
+  import NavLink from './NavLink'
+
+  export default {
+    name: 'navbar',
+    components: { NavLink }
+  }
+</script>
 
 <style>
   nav {

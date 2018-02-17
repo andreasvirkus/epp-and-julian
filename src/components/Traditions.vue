@@ -14,10 +14,3 @@
     </h3>
  </section>
 </template>
-
-<style>
-  code {
-    background-color: #999;
-    font-family: monospace;
-  }
-</style>

@@ -55,12 +55,6 @@
   </section>
 </template>
 
-<script>
-  export default {
-    name: 'schedule'
-  }
-</script>
-
 <style scoped>
   section {
     max-width: 30em;

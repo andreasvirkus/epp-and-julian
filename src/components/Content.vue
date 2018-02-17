@@ -165,36 +165,6 @@
     text-align: center;
   }
 
-  main a {
-    color: #cde3ed;
-    outline: 0;
-    text-decoration: none;
-    position: relative;
-    display: inline-block;
-    line-height: 2.2;
-    font-weight: 700;
-    padding-bottom: 2px;
-  }
-  main a svg.link-svgline {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    overflow: hidden;
-    margin: 0;
-    width: 100%;
-    height: 20px;
-    transition: stroke-dashoffset 0.3s ease-in-out;
-    transform: translateY(-90%);
-    fill: none;
-    stroke: #68acc8;
-    stroke-width: 5;
-    stroke-dasharray: 400px;
-    stroke-dashoffset: 400px;
-  }
-  main a:hover svg.link-svgline {
-    stroke-dashoffset: 0;
-  }
-
   @media (max-width: 35em) {
     h1 {
       font-size: 2.5em;

@@ -2,12 +2,14 @@
 
 > A wedding website as lovely as the couple itself
 
+The domain has resigned, but the site is still up on [epp-and-julian.netlify.com](https://epp-and-julian.netlify.com)
+
 ## TODO:
 
-- Pictures for each section
-- Frames for pictures
-- Landing page arrow
-- GoogleMaps styles
+- ~Pictures for each section~
+- ~Frames for pictures~
+- ~Landing page arrow~
+- ~GoogleMaps styles~
 
 ## Build Setup
 
